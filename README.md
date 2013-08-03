@@ -1,4 +1,4 @@
-vim
+my-vim
 ===
 
-Mi configuración para Vim.
+Mi configuración personalizada para Vim.
