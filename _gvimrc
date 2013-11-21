@@ -1,0 +1,26 @@
+set encoding=utf-8
+if has('gui_running')    
+    "set gfn=monofur:h10:cANSI
+    "set gfn=Consolas_for_Powerline_FixedD:h10
+    "set guifont=DejaVu\ Sans\ Mono\ for\ Powerline\ 9
+    if has('win32') || has("win64")
+        set t_Co=256
+        set laststatus=2
+	    set guifont=Consolas\ for\ Powerline\ FixedD:h10
+    else
+        set guifont=Ubuntu\ Mono\ 12
+    endif
+    set lines=40 columns=130
+endif
+
+" remove the toolbar
+set guioptions-=T
+" remove the menubar
+set guioptions-=m
+" remove the right-hand scrollbar
+set guioptions-=r
+
+set langmenu=en_US.UTF-8
+:let $LANG = 'en_US'
+source $VIMRUNTIME/delmenu.vim
+source $VIMRUNTIME/menu.vim
