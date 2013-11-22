@@ -69,6 +69,8 @@ let g:pymode_syntax_indent_errors = g:pymode_syntax_all
 let g:pymode_syntax_space_errors = g:pymode_syntax_all
 " Don't autofold code
 let g:pymode_folding = 0
+" Por ahora no me intersa la complejidad ciclotimica
+let g:pymode_lint_mccabe_complexity = 10
 
 " Cambio la tecla <leader>
 let mapleader = ","
@@ -102,7 +104,7 @@ nnoremap Q <nop>
 
 " change default directory
 if has("win32") || has("win64")
-	cd /Users/fep/Documents/src
+    cd /Users/fep/Documents/src
 else
     cd /home/fep/src
 endif
